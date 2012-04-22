@@ -25,3 +25,4 @@ function branch {
 	fi
 }
 alias cd=branch
+cd .
