@@ -5,3 +5,11 @@ by adding the current git branch in the command prompt.
 When you change the directory, it checks if it contains a git repository
 and adds the branch to your prompt. If there isn't, it reverts to
 the normal prompt.
+
+How to use this?
+Just save the shell script somewhere and add it to your .bashrc file
+like this:
+. /usr/local/bin/git-branch-prompt.sh
+
+Also change the directory match :)
+
