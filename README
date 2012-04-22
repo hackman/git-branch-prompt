@@ -1,2 +1,7 @@
 I needed a way to see the current git branch on which I'm working. 
-So I developed this simple script that allowed me to do just that.
+So I developed this simple script that allowed me to do just that,
+by adding the current git branch in the command prompt.
+
+When you change the directory, it checks if it contains a git repository
+and adds the branch to your prompt. If there isn't, it reverts to
+the normal prompt.
