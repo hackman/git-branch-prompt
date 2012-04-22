@@ -13,7 +13,7 @@ function revert_ps {
 function branch {
 	cd $1
 	cwd=$(pwd)
-	if [[ "$cwd" =~ \/home\/hackman\/Projects ]] && [ -d $cwd/.git ]; then
+	if [[ "$cwd" =~ \/home\/hackman\/Projects ]]; then
 		if [ "$PSCHANGED" == 1 ]; then
 			if [ "$cwd" != "$OLDPWD" ]; then
 				change_ps
