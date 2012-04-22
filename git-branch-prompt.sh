@@ -12,10 +12,9 @@ function revert_ps {
 
 function branch {
 	cd $1
-	cwd=$(pwd)
-	if [[ "$cwd" =~ \/home\/hackman\/Projects ]]; then
+	if [[ "$PWD" =~ \/home\/hackman\/Projects ]]; then
 		if [ "$PSCHANGED" == 1 ]; then
-			if [ "$cwd" != "$OLDPWD" ]; then
+			if [ "$PWD" != "$OLDPWD" ]; then
 				change_ps
 			fi
 		else
