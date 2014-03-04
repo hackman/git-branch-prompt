@@ -11,7 +11,7 @@ function revert_ps {
 }
 
 function branch {
-	cd $1
+	cd "$1"
 	if [[ "$PWD" =~ \/home\/hackman\/Projects ]]; then
 		if [ "$PSCHANGED" == 1 ]; then
 			if [ "$PWD" != "$OLDPWD" ]; then
